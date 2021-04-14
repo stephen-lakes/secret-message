@@ -4,7 +4,7 @@ input_string = input_string.lower()
 
 for letter in input_string:
     if letter not in aphabet:
-        input_string = input_string.replace(letter, " " + "-")
+        input_string = input_string.replace(letter, " ")
     else:
         input_string = input_string.replace(letter, str(aphabet.find(letter) + 1) + "-")
     
